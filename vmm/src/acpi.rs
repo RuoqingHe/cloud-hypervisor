@@ -42,6 +42,10 @@ pub const ACPI_APIC_GENERIC_DISTRIBUTOR: u8 = 12;
 pub const ACPI_APIC_GENERIC_REDISTRIBUTOR: u8 = 14;
 #[cfg(target_arch = "aarch64")]
 pub const ACPI_APIC_GENERIC_TRANSLATOR: u8 = 15;
+#[cfg(target_arch = "riscv64")]
+pub const ACPI_RISC_V_IMSIC: u8 = 0x19;
+#[cfg(target_arch = "riscv64")]
+pub const ACPI_RISC_V_APLIC: u8 = 0x1A;
 
 #[allow(dead_code)]
 #[repr(C, packed)]
